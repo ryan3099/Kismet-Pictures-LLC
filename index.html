@@ -5,33 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kismet Pictures, LLC</title>
   <style>
-    :root{--pink:#ff4fa0; --gold:#ffd166; --black:#0c0c0f}
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: url('https://cdn.culture.ru/images/9ce973b8-7402-5a7c-819b-4acb98b88e24') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
-    }
-    header {
-      background: rgba(12,12,15,0.85);
-      border-bottom: 2px solid var(--pink);
-      padding: 22px 20px;
-      text-align: center;
-    }
-    header h1 {margin: 0; font-size: 2.6em; color: var(--pink); letter-spacing: .5px}
-    header p {margin: 6px 0 0; font-size: 1.05em; opacity: .9}
-    nav {background: #111; padding: 10px; text-align: center; border-bottom: 1px solid rgba(255,255,255,.08)}
-    nav a {color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold}
-    nav a:hover {color: var(--pink)}
-    .container {display:flex; background: rgba(12,12,15,0.78); margin: 22px; padding: 22px; border:1px solid rgba(255,255,255,.08)}
-    .sidebar {width: 26%; padding: 10px}
-    .sidebar h3 {color: var(--pink); margin-top: 0}
-    .content {width: 74%; padding: 18px 20px}
-    .content h2 {color: var(--pink); margin: 0 0 8px}
-    .content img {max-width:100%; border-radius: 10px; margin: 15px 0; border:1px solid rgba(255,255,255,.15)}
-    .badge {display:inline-block; padding:6px 10px; border:1px solid var(--pink); color:var(--pink); border-radius:999px; font-size:.85em}
-    footer {background: rgba(12,12,15,0.92); text-align:center; padding: 16px; margin: 22px; border-top:2px solid var(--pink)}
+    :root{--pink:#ff4fa0; --black:#0c0c0f}
+    body {margin:0; font-family: Arial, sans-serif; background:#0c0c0f url('https://cdn.culture.ru/images/9ce973b8-7402-5a7c-819b-4acb98b88e24') no-repeat center center fixed; background-size:cover; color:#fff;}
+    header {background: rgba(12,12,15,0.85); border-bottom:2px solid var(--pink); padding:22px; text-align:center}
+    header h1{margin:0; font-size:2.3em; color:var(--pink)}
+    header p{margin:6px 0 0; opacity:.9}
+    nav {background:#111; padding:10px; text-align:center}
+    nav a{color:#fff; margin:0 15px; text-decoration:none; font-weight:bold}
+    nav a:hover{color:var(--pink)}
+    .container{display:flex; background:rgba(12,12,15,0.78); margin:20px; padding:20px;}
+    .sidebar{width:25%; padding:10px}
+    .sidebar h3{color:var(--pink); margin-top:0}
+    .content{width:75%; padding:18px}
+    .content h2{color:var(--pink)}
+    .content img{max-width:70%; border-radius:8px; margin:10px 0; border:1px solid rgba(255,255,255,.2)}
+    .map-box{margin-top:10px}
+    iframe{width:100%; height:150px; border:0; border-radius:8px}
+    footer{background:rgba(12,12,15,0.9); text-align:center; padding:16px; margin:20px; border-top:2px solid var(--pink)}
+    .contact-icons{display:flex; justify-content:center; gap:20px; margin-top:10px}
+    .contact-icons a{color:#fff; text-decoration:none; font-size:1.1em; display:flex; align-items:center; gap:6px}
+    .section{background:rgba(12,12,15,0.78); margin:20px; padding:20px; border:1px solid rgba(255,255,255,.1)}
+    .section h2{color:var(--pink)}
   </style>
 </head>
 <body>
@@ -43,6 +37,7 @@
   <nav>
     <a href="#services">Services</a>
     <a href="#portfolio">Portfolio</a>
+    <a href="#about">About</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -57,8 +52,10 @@
         <li>Retouching & Color Grading</li>
       </ul>
 
-      <h3>Updates</h3>
-      <p><span class="badge">New</span> Spring package: Sunset portraits on the coast.</p>
+      <h3>Find Us</h3>
+      <div class="map-box">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.71591689439!2d-118.369!3d34.0736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDA0JzI1LjAiTiAxMTjCsDIyJzA4LjIiVw!5e0!3m2!1sen!2sus!4v0000000000" allowfullscreen=""></iframe>
+      </div>
     </div>
 
     <div class="content">
@@ -66,18 +63,33 @@
       <p>We capture stories in natural light—from sweeping landscapes to intimate portraits. Based in Los Angeles, we deliver cinematic images with a signature pink‑and‑black aesthetic.</p>
 
       <img src="https://t4.ftcdn.net/jpg/01/92/61/91/360_F_192619124_peK9S54xbg6Qvd6DQcvgyGQxzPC31Wfg.jpg" alt="Nature Photography">
+
       <p id="portfolio">Our focus is on authentic, crisp compositions and timeless color. Explore a few recent frames below.</p>
-
       <img src="https://media-api.xogrp.com/images/371764c6-459e-4be5-9486-c617c41ec15f~rs_768.h" alt="Portrait Session">
-      <p>From candid moments to styled shoots, we tailor each session to your story and setting.</p>
 
+      <p>From candid moments to styled shoots, we tailor each session to your story and setting.</p>
       <img src="https://cdn.shopify.com/s/files/1/0076/3147/0662/files/timelapse-what.jpg?v=1630925256" alt="Timelapse & Product">
     </div>
   </div>
 
+  <div class="section">
+    <h2>Services Coming Soon...</h2>
+    <p>We are preparing new packages and offers for our photography sessions. Stay tuned for updates!</p>
+  </div>
+
+  <div class="section" id="about">
+    <h2>About Our Domain</h2>
+    <p>We specialize in <strong>photographer services</strong> focusing on <em>nature and shooting women and kids</em>. Our mission is to create timeless photographs that capture both the beauty of the natural environment and the genuine emotions of people.</p>
+  </div>
+
   <footer id="contact">
-    <p>📍 W. 3rd St, Los Angeles, CA 90048 | ☎ 16606676517 | ✉ contact@ckovv.shop</p>
-    <p>© 2025 Kismet Pictures, LLC — Photographer Service (Nature & Shooting)</p>
+    <p>📍 W. 3rd St, Los Angeles, CA 90048</p>
+    <div class="contact-icons">
+      <a href="mailto:contact@ckovv.shop">📧 Email</a>
+      <a href="https://wa.me/16606676517" target="_blank">💬 WhatsApp</a>
+      <span>📞 16606676517</span>
+    </div>
+    <p>© 2025 Kismet Pictures, LLC — Photographer Service</p>
   </footer>
 </body>
 </html>
