@@ -1,67 +1,83 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CAP Garland, LLC</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kismet Pictures, LLC</title>
   <style>
+    :root{--pink:#ff4fa0; --gold:#ffd166; --black:#0c0c0f}
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-      color: #333;
+      font-family: Arial, Helvetica, sans-serif;
+      background: url('https://cdn.culture.ru/images/9ce973b8-7402-5a7c-819b-4acb98b88e24') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
     }
     header {
-      background-color: #003366;
-      color: white;
-      padding: 30px 20px;
+      background: rgba(12,12,15,0.85);
+      border-bottom: 2px solid var(--pink);
+      padding: 22px 20px;
       text-align: center;
     }
-    section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h1, h2 {
-      color: #003366;
-    }
-    .contact {
-      background: #fff;
-      padding: 20px;
-      border-left: 5px solid #003366;
-      margin-top: 30px;
-    }
-    footer {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 50px;
-    }
+    header h1 {margin: 0; font-size: 2.6em; color: var(--pink); letter-spacing: .5px}
+    header p {margin: 6px 0 0; font-size: 1.05em; opacity: .9}
+    nav {background: #111; padding: 10px; text-align: center; border-bottom: 1px solid rgba(255,255,255,.08)}
+    nav a {color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold}
+    nav a:hover {color: var(--pink)}
+    .container {display:flex; background: rgba(12,12,15,0.78); margin: 22px; padding: 22px; border:1px solid rgba(255,255,255,.08)}
+    .sidebar {width: 26%; padding: 10px}
+    .sidebar h3 {color: var(--pink); margin-top: 0}
+    .content {width: 74%; padding: 18px 20px}
+    .content h2 {color: var(--pink); margin: 0 0 8px}
+    .content img {max-width:100%; border-radius: 10px; margin: 15px 0; border:1px solid rgba(255,255,255,.15)}
+    .badge {display:inline-block; padding:6px 10px; border:1px solid var(--pink); color:var(--pink); border-radius:999px; font-size:.85em}
+    footer {background: rgba(12,12,15,0.92); text-align:center; padding: 16px; margin: 22px; border-top:2px solid var(--pink)}
   </style>
 </head>
 <body>
   <header>
-    <h1>CAP Garland, LLC</h1>
-    <p>Private Investment Fund</p>
+    <h1>Kismet Pictures, LLC</h1>
+    <p>Nature & Portrait Photography — Los Angeles</p>
   </header>
 
-  <section>
-    <h2>About Us</h2>
-    <p>CAP Garland, LLC is a Washington-based private investment fund focused on delivering value through diversified investment strategies.</p>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <h2>Contact</h2>
-    <div class="contact">
-      <p><strong>Address:</strong> 915 W 2nd Ave, Spokane, WA 99201</p>
-      <p><strong>Email:</strong> <a href="mailto:ryanberg@capgarland.shop">ryanberg@capgarland.shop</a></p>
-      <p><strong>Phone:</strong> (509) 822-3850</p>
+  <div class="container">
+    <div class="sidebar">
+      <h3>Photographic Services</h3>
+      <ul>
+        <li>Nature & Landscape Sessions</li>
+        <li>Outdoor Portraits</li>
+        <li>Commercial Product Shots</li>
+        <li>Event Coverage</li>
+        <li>Retouching & Color Grading</li>
+      </ul>
+
+      <h3>Updates</h3>
+      <p><span class="badge">New</span> Spring package: Sunset portraits on the coast.</p>
     </div>
-  </section>
 
-  <footer>
-    &copy; 2025 CAP Garland, LLC. All rights reserved.
+    <div class="content">
+      <h2 id="services">Welcome to Kismet Pictures</h2>
+      <p>We capture stories in natural light—from sweeping landscapes to intimate portraits. Based in Los Angeles, we deliver cinematic images with a signature pink‑and‑black aesthetic.</p>
+
+      <img src="https://t4.ftcdn.net/jpg/01/92/61/91/360_F_192619124_peK9S54xbg6Qvd6DQcvgyGQxzPC31Wfg.jpg" alt="Nature Photography">
+      <p id="portfolio">Our focus is on authentic, crisp compositions and timeless color. Explore a few recent frames below.</p>
+
+      <img src="https://media-api.xogrp.com/images/371764c6-459e-4be5-9486-c617c41ec15f~rs_768.h" alt="Portrait Session">
+      <p>From candid moments to styled shoots, we tailor each session to your story and setting.</p>
+
+      <img src="https://cdn.shopify.com/s/files/1/0076/3147/0662/files/timelapse-what.jpg?v=1630925256" alt="Timelapse & Product">
+    </div>
+  </div>
+
+  <footer id="contact">
+    <p>📍 W. 3rd St, Los Angeles, CA 90048 | ☎ 16606676517 | ✉ contact@ckovv.shop</p>
+    <p>© 2025 Kismet Pictures, LLC — Photographer Service (Nature & Shooting)</p>
   </footer>
 </body>
 </html>
